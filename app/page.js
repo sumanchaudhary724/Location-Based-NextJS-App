@@ -2,6 +2,7 @@
 import { signOut, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import React, { useEffect } from "react";
+import CategoryList from "./components/Home/CategoryList";
 
 export default function Home() {
   const { data: session } = useSession();
@@ -11,5 +12,9 @@ export default function Home() {
       router.push("/login");
     }
   }, [session]);
-  return <div></div>;
+  return (
+    <div>
+      <CategoryList />
+    </div>
+  );
 }
