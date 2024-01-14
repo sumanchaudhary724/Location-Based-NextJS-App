@@ -40,6 +40,7 @@ export async function GET(request) {
       },
     }
   );
+  const product = await res.json();
 
   return NextResponse.json({ product });
 }
