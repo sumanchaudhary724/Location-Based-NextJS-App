@@ -10,7 +10,6 @@ const SelectRating = () => {
     } else {
       setSelectedRating(selectedRating.filter((n) => n !== value));
     }
-    console.log(selectedRating);
   };
   return (
     <div className="px-2 mt-5">
