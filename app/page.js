@@ -21,7 +21,6 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const router = useRouter();
   const { userLocation, setUserLocation } = useContext(UserLocationContext);
-  console.log("helloL:", businessList);
   useEffect(() => {
     if (!session?.user) {
       router.push("/login");
